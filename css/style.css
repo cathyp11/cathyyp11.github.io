@@ -16,16 +16,18 @@
 	font-style: normal;
 }
 
+
 /*Typography*/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 100;
     line-height: 1.5em;
     /*    Set the font in white color */
     color: #404040;
     overflow-x: hidden;
+    background-color: #D0D0D0;
 }
 
 #about {
@@ -382,6 +384,9 @@ a:focus {
     color: darkgrey !important;
 }
 
+.navbar-default .navbar-nav>.active>a {
+    background-color: white;
+}
 .navbar li {
     padding-top: 25px;
 }
@@ -390,7 +395,7 @@ a:focus {
 
 .navbar .navbar-brand {
     font-size: 2em;
-    color: dodgerblue !important;
+    color: black !important;
 }
 
 
@@ -404,8 +409,8 @@ a:focus {
 /* The active link, when scroll to the section, the menu items will turn to different color */
 
 .navbar-nav li.active a {
-    color: white !important;
-    background-color: #55555a !important;
+    color: black !important;
+    background-color: white;
 }
 
 
@@ -557,6 +562,7 @@ h1 {
     margin-right: -50px;
 }
 h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #686868;
 }
