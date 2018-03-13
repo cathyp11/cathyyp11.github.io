@@ -16,11 +16,31 @@
 	font-style: normal;
 }
 
+@font-face {
+font-family: 'GeosansLight';
+font-style: normal;
+font-weight: normal;
+src: local('GeosansLight'), url('GeosansLight.woff') format('woff');
+}
 
+
+@font-face {
+font-family: 'GeosansLight-Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('GeosansLight-Oblique'), url('GeosansLight-Oblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Louis George Café";
+    src: url("Louis_George_Cafe.eot?") format("eot"),url("Louis_George_Cafe.woff") format("woff"),url("Louis_George_Cafe.ttf") format("truetype"),url("Louis_George_Cafe.svg#LouisGeorgeCafe") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
 /*Typography*/
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Louis George Café', sans-serif;
     font-size: 20px;
     font-weight: 100;
     line-height: 1.5em;
