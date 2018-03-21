@@ -1,855 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Basic Page Needs––––––––––––––––––––––––––– -->
-
 <head>
-    <meta http-equiv="content-type" content="text/html">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Yejin Park</title>
-    <meta name="description" content="Yejin Park portfolio">
-    <meta name="keywords" content="portfolio, photography, photographer, coder, project, video, videos, director">
-    
-    <!-- Bootstrap Core CSS ––––––––––––––––––––––––––– -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom CSS ––––––––––––––––––––––––––– -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- Custom Fonts ––––––––––––––––––––––––––– -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
-    <!-- To add a google font and paste the link -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind|Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-    <!-- Favicon––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="img/favicon.png">
+	<meta charset="utf-8">
+	<title>Cathy Park</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+	<!-- <meta name="theme-color" content="#ffffff"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
-    <!--
-    Navigation 
-    <div id="navigation">
-        <img id="logo" src="img/logo1.png" alt="logo">
-        <ul>
-            <li><a href="#home">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Work</a></li>
-            <li><a href="#top">Home</a></li>
-        </ul>
-    </div>
--->
+	<div id="wrap">
+		<div id="myNav" class="overlay-nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="#top">Home</a>
+				<a href="#about">About</a>
+				<a href="#work">Work</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
 
-    <!--Navigation-->
+		<nav id="navbar">
+			<h1 class="hidden">navigation</h1>
+			<span onclick="openNav()">&#9776;</span>
+		</nav>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-<!--                <a class="navbar-brand page-scroll" href="#top"><img id="logo" src="img/logo1.png" alt="logo"></a>-->
+		<header id="top">
+			<h1 class="hidden">header</h1>
+			<div class="container-fluid overlay">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center">
+							<h2>Cathy Park</h2>
+							<h3>coder. developer. editor.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+			
+		<section id="about">
+			<div class="container-fluid cell">
+				<h1 class="text-center">about</h1>
+				<div class="row">
+					<div class="centerBlock">
+						<div class="col-sm-2 col-sm-offset-2"">
+			            	<h3 class="hidden">leftbox</h3>
+			                <img class="img-circle img-responsive" src="img/profile.jpg">
+			            </div>
+			            <div class="col-sm-6 col-sm-offset-1">
+			            	<h3 class="hidden">rightbox</h3>
+			                <!-- <p class="title">Hello, I'm Cathy.</p> -->
+			                <p>I'm currently a sophomore at University of Michigan pursuing BSI at School of Information with a special focus on UI/UX Design and a minor in Applied Statistics. As a hobby, I enjoy taking photos and filming videos. The works that I have below are few photos and videos that describe myself the places that I visited. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people.</p>
+			                <p><a class="btn btn-default" href="img/resume.pdf" target="_blank">resume</a></p>
+			            </div>
+					</div>
+		            
+	       		</div>
+			</div>
+		</section>
 
-            </div>
+		<section id="work">
+			<div class="container-fluid cell">
+				<h1 class="text-center">work</h1>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>hello</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll"><a href="#about">About</a></li>
-                    <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                    <li class="page-scroll"><a href="#contact">Contact</a></li>
+		<footer id="contact">
+			<div class="container-fluid cell">
+			<h1 class="text-center">CONTACT</h1>
+				<div class="row">
+					<div class="col-sm-4 mx-auto">
+						<div class="centerBlock">
+							<!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons text-center">call</i></a> -->
+							<a href="#" target="_blank"><h4>734-263-4605</h4></a>
+							<a href="#" target="_blank"><h4>cathyy96@gmail.com</h4></a>
+							<!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons">mail_outline</i></a> -->
+							<!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons">pin_drop</i></a> -->
+							<!-- <h4 class="centerBlock">phone:</h4> -->
+							<!-- <h4>734-263-4605</h4> -->
+						</div>
+					</div>
+<!-- 					<div class="col-sm-4 mx-auto">
+						<div class="centerBlock">
+							<a class="centerBlock" href="#" target="_blank"><i class="material-icons">mail_outline</i></a>
+							<h4 class="centerBlock">email:</h4>
+							<h4>cathyy96@gmail.com</h4>
+						</div>
+					</div>
+					<div class="col-sm-4 mx-auto">
+						<div class="centerBlock">
+							<a class="centerBlock" href="#" target="_blank"><i class="material-icons">pin_drop</i></a>
+							<h4 class="centerBlock">location:</h4>
+							<h4>Ann Arbor, Michigan</h4>
+						</div>
+					</div> -->
+				</div>
+				<div class="row gap">
+					<div class="centerBlock">
+						<div class="col-sm-4">
+							<a class="social" href="https://www.linkedin.com/in/yc-park" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+						</div>
+						<div class="col-sm-4">
+							<a class="social" href="https://www.linkedin.com/in/yc-park" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+						</div>
+						<div class="col-sm-4">
+							<a class="social" href="https://www.linkedin.com/in/yc-park" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+						</div>											
+					</div>
+				</div>
+				<div class="row gap">
+					<div class="col-sm-12">
+						<p>© Yejin Park 2017. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+<!-- 		<footer>
+			<p>© Yejin Park 2017. All Rights Reserved.</p>
+        	<p class="text-right">Designed by <a target="_blank" href="#">Yejin Park</a></p>
+		</footer> -->
+	</div>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
 
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-    <!-- Page Content -->
-    <!--header-->
-    <div id="top">
-        <div class="box2 center-block">
-            <div class="box center-block">
-                <h2 class="text-center" style="font-size: 42px">Cathy Park</h2>
-                <h2 class="text-center">Coder. Director. Editor. Photographer.</h2>
-            </div>
-        </div>
-    </div>
-
-    <!--beginning of about section -->
-
-    <div class="container-fluid" id="about">
-        <h1 class="text-center">A B O U T</h1> &nbsp;
-        <div class="row">
-            <!--content goes here-->
-            <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-                <!--left part-->
-                &nbsp;&nbsp;
-                <img id="profile" class="img-circle img-responsive float-left" src="img/profile.jpg"> &nbsp;
-            </div>
-            <!--gap between left and right-->
-            <div class="col-sm-1"></div>
-            <!--right part-->
-            <div class="col-sm-7">
-                <p style="font-family:'Hind'; font-size: 25px; font-weight: 800">Hello, I'm Cathy.</p>
-                <p>I'm currently a sophomore at University of Michigan pursuing BSI at School of Information with special focus on UI/UX Design and a minor in Applied Statistics. As a hobby, I enjoy taking photos and filming videos. The works that I have below are few photos and videos that describe myself the places that I visited. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people. </p>
-<!--                <p style="font-family:'Hind'; font-size: 25px; font-weight: 800">Social Media Savvy.</p>-->
-                <p><a class="btn btn-default sharp" href="img/resume.pdf" target="_blank">RESUME</a></p>
-            </div>
-        </div>
-    </div>
-    &nbsp;
-    <!--end of about container-->
-
-    <!--portfolio section-->
-
-    <div class="container-fluid" id="portfolio">
-        <h1 class="text-center">P o r t f o l i o</h1>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Thunder</h3>
-                            <!--                                <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/portfolio1-.gif" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Glion</h3>
-                        </div>
-                    </div>
-                    <img src="img/portfolio2-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Parade</h3>
-                            <!--                            <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/portfolio3-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Posters</h3>
-                        </div>
-                    </div>
-                    <img src="img/poster-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Montreaux</h3>
-                        </div>
-                    </div>
-                    <img src="img/portfolio5-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Sion</h3>
-                            <!--                            <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/portfolio6-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-        </div>
-        <div class="row">
-            <div class="col-sm-3 portfolio-item">
-                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Bridge at Yeosu</h3>
-                            <!--                                <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/bridge-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-3 portfolio-item">
-                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Railway to Glion</h3>
-                        </div>
-                    </div>
-                    <img src="img/rail-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-            <div class="col-sm-3 portfolio-item">
-                <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Mountains from the Train</h3>
-                            <!--                            <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/mountains-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-3 portfolio-item">
-                <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h3 class="text-center">Graffiti</h3>
-                            <!--                            <i class="fa fa-search-plus fa-3x"></i>-->
-                        </div>
-                    </div>
-                    <img src="img/graffiti-.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <!--end of portfolio item-->
-        </div>
-        <div class="row">
-            <div class="col-sm-6 portfolio-item">
-
-                <!--video embed option-->
-                <div class="embed-responsive embed-responsive-4by3">
-                    <!--                    find the iframe information from youtube.com-->
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M1yjF_6vf50" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--end of portfolio container-->
-
-
-    <!-- Footer Content -->
-    <footer class="container-fluid page-scroll" id="contact">
-
-        <!--    contact-->
-        <h1 class="text-center">C O N T A C T</h1>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <p class="first"><img src="img/phone.png" hspace="20"> 123-456-7890</p>
-                <p><img src="img/email.png" hspace="20"> cathyy96@gmail.com</p>
-                <p><img src="img/home.png" hspace="20">1531 PACKARD ST, ANN ARBOR, MI</p>
-
-                <div class="row">
-                    <div class="col-xs-2 col-xs-offset-2"><a class="social" href="https://www.instagram.com/cathyyp11/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></div>
-                    <div class="col-xs-2"><a class="social" href="https://www.facebook.com/cathyypark" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></div>
-                    <div class="col-xs-2"><a class="social" href="https://www.youtube.com/channel/UC6EAu7RhUjveNhCHecI-M8w/featured" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a></div>
-                    <div class="col-xs-2"><a class="social" href="https://www.linkedin.com/in/yc-park" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="name" class="form-control" id="name" placeholder="Enter name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <input type="message" class="form-control" id="message" placeholder="Enter message">
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> Remember me</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-        </div>
-
-
-
-
-
-        <p class="text-center">© Yejin Park 2017. All Rights Reserved.</p>
-        <p class="text-center">Designed by <a target="_blank" href="#">Yejin Park</a></p>
-
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-    <!--Animation-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
 </body>
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/portfolio1.gif" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Thunder on Kapellbrücke in Lucerne</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/portfolio2.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>View from Glion</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/portfolio3.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Parade</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/poster.jpg" class="img-responsive img-centered" alt="">
-                        <!--
-                        <video width="720" controls>
-                            <source src="img/spring.mp4" type="video/mp4">
-                            <source src="mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video.
-                        </video>
--->
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Posters</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/portfolio5.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Montreaux</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/portfolio6.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Sion</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/bridge1.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Bridge at Yeosu</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/rail1-.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Railway to Glion</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/mountains.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Mountains from the Train</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="modal-body">
-                    <div class="col-sm-8">
-                        <!--  Replace the image src path with your own images. The minimum image width is 720px-->
-                        <img src="img/graffiti.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <!--                    end of left part-->
-                    <div class="col-sm-4">
-                        <h2>Graffiti</h2>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--                    end of right part-->
-                </div>
-                <!--                end of modal body-->
-            </div>
-            <!--            end of row-->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-prev">Prev</button>
-                <button type="button" class="btn btn-default btn-next">Next</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        <!--        end of container-->
-    </div>
-    <!--    end of modal content-->
-</div>
-<!--end of portfolio modal-->
-
 </html>
