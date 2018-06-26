@@ -32,9 +32,6 @@
     src: url("Fester-Medium.otf") format("opentype");
 }
 
-.hidden{position: absolute; left: -9999em;}
-#wrap{margin: 0 auto; overflow-y: hidden;}
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -60,19 +57,119 @@
   font-feature-settings: 'liga';
 }
 
+.hidden{
+	position: absolute; 
+	left: -9999em;
+}
+
+#wrap{
+	margin: 0 auto; 
+	overflow-y: hidden;
+}
+
+.cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.centerBlock{
+	display: table;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	display: block;
+	font-family: 'Louis George Cafe', sans-serif;
+	color: white;
+}
+
+h1{
+	/*font-family: 'Fester', sans-serif;*/
+	font-size: 60px;
+	letter-spacing: 2px;
+	margin: 10px 0 70px 0;
+	font-weight: 900;
+	color: #88bbd6;
+}
+
+h2{
+	font-family: 'Fester', sans-serif;
+	margin: 0;
+	line-height: 0;
+	vertical-align: middle;
+	font-weight: 900;
+	font-size: 80px;
+	letter-spacing: 5px;
+	line-height: 50px;
+	/*color: #45A29E;*/
+}
+
+h3{
+	font-weight: 600;
+	font-family: 'Louis George Cafe', sans-serif;
+	font-size: 38px;
+	color: #88bbd6;
+}
+
+h4{
+	font-family: 'Louis George Cafe', sans-serif;
+	font-size: 22px;
+}
+
+h5{
+	/*font-family: ''*/
+	font-size: 20px;
+	color: #505151;
+}
+
+p{
+	font-family: 'Louis George Cafe', sans-serif;
+	font-size: 20px;
+    color: #505151;
+}
+
+
+/*navigation*/
 nav{
 	position: fixed; 
 	overflow: hidden;
 	font-family: 'Louis George Cafe', sans-serif;
 	font-size: 20px;
+	z-index: 1;
+  	padding: 5px 40px 5px 0;   	
+  	background-color: #FAFAFA;
+  	/*opacity: 0.7;*/
 }
+
+nav a{
+	color: #88bbd6;
+}
+
+nav a:hover{
+	font-weight: 900;
+	background-color: transparent !important;
+}
+
+nav li:active a{
+	color: black;
+}
+
+.navbar-nav li a:active {
+    color:black;
+}
+
+/*.navbar-nav li.active a {
+    color: white !important;
+    background-color: #55555a !important;
+}*/
+
 
 .overlay-nav {
     height: 0%;
     width: 100%;
     position: fixed;
     z-index: 1;
-    top: 10px;
+    /*top: 10px;*/
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
@@ -130,6 +227,12 @@ span {
 	font-family: 'Louis George Cafe', sans-serif;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 header {
 	width: 100%;
 	height: 100%; 
@@ -161,92 +264,26 @@ header .row{
 }
 
 
-h1,h2,h3,h4,h5,h6{
-	display: block;
-	font-family: 'Louis George Cafe', sans-serif;
-	color: white;
-}
 
-h1{
-	font-size: 40px;
-	letter-spacing: 2px;
-	margin-top: 0;
-	font-weight: 900;
-	color: #88bbd6;
-}
-
-h2{
-	font-family: 'Fester', sans-serif;
-	margin: 0;
-	line-height: 0;
-	vertical-align: middle;
-	font-weight: 900;
-	font-size: 80px;
-	letter-spacing: 5px;
-	line-height: 50px;
-	/*color: #45A29E;*/
-}
-
-h3{
-	font-weight: 600;
-	/*font-family: 'Louis George Cafe', sans-serif;*/
-	font-size: 36px;
-	color: #88bbd6;
-}
-
-h4{
-	font-family: 'Louis George Cafe', sans-serif;
-	font-size: 22px;
-}
 
 #about, #work, #contact{
 	width: 100%;
 	display: table;
+	background: #FAFAFA;
+	padding: 50px;
 }
 
-#about{
-	/*background: #C5C6C7;*/
-	background: #DBDBDB;
-	min-height: 720px;
-	height: 100%;
-}
-
-#work{
-	background: #E9E9E9;
-	min-height: 720px;
-	height: 100%;
-
-}
-
-#contact{
-	background: #88bbd6;
-	padding: 60px;
-}
-
-#contact h1{
-	color: #E9E9E9;
-}
-
-.cell{
-	display: table-cell;
-	vertical-align: middle;
-}
-
-p{
-	font-family: 'Louis George Cafe', sans-serif;
-	font-size: 20px;
-    color: #505151;
-}
 
 /*about section*/
-#about>.row{
-	display: table;
+#about{
+	/*background: #C5C6C7;*/
+	/*background: #fff;*/
+	min-height: 720px;
+	height: 100%;
 }
 
-.title{
-	font-weight: 400;
-	font-size: 25px;
-	color: #45A29E;
+#about>.row{
+	display: table;
 }
 
 .btn{
@@ -269,6 +306,45 @@ p{
 	vertical-align: middle;
 }
 
+
+/*work section*/
+#work{
+	/*background: #E9E9E9;*/
+	min-height: 720px;
+	/*height: 100%;*/
+
+}
+
+#work .portfolio{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0 30px;
+}
+
+#work img{
+	max-width: 80%;
+}
+
+#work p{
+	/*margin: auto;*/
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+/*contact section*/
+#contact{
+	background: #88bbd6;
+	padding: 60px;
+}
+
+#contact h1{
+	color: #E9E9E9;
+}
+
 #contact a{
 	color: white;
 }
@@ -277,15 +353,9 @@ p{
 	text-decoration: none;
 }
 
-.centerBlock{
-	display: table;
-	margin: auto;
-}
-
 #contact h4{
 	margin: 10px auto;
 }
-
 
 .gap{
 	padding-top: 50px;
