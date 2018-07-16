@@ -28,7 +28,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery.fullPage.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -67,7 +66,6 @@
 		                            <h2>Cathy Park</h2>
 		                            <h3>coder. developer. editor.</h3>
 		                            <a id="arrow" class="ct-btn-scroll ct-js-btn-scroll" href="#about"><img class="bounce" alt="Arrow Down Icon" src="img/down-arrow.png"width="10%"></a>
-		                            <!-- <img src="img/down-arrow.png" width="0%"> -->
 		                        </div>
 		                    </div>
 		                </div>
@@ -140,7 +138,7 @@
 								<div class="overlayWork">
 					                <h2>day2life</h2>
 									<p>
-										<a href="img/devgraph.png">LINK HERE</a>
+										<a href="#" data-toggle="modal" data-target="#modal1">LINK HERE</a>
 									</p>
 					            </div>
 							</div>	
@@ -260,6 +258,38 @@
 			</footer>
 		</div>
 
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-left">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+
+                    </button>
+                     <h5 class="modal-title" id="modal1Label">Day2Life</h5>
+
+                </div>
+                <div class="modal-body">
+                	<img class="mySlides" src="img/devgraph.png" />
+					<img class="mySlides" src="img/item.png" />
+					<img class="mySlides" src="img/itemReview.png" />
+					<img class="mySlides" src="img/StatRec.png" />
+					<img class="mySlides" src="img/StatRec2.png" />
+					<img class="mySlides halfSize" src="img/itemDet.png" />
+					<img class="mySlides halfSize" src="img/itemDet1.png">
+					<img class="mySlides halfSize" src="img/itemDet2.png" />
+					<img class="mySlides halfSize" src="img/itemReg.png">
+					<img class="mySlides halfSize" src="img/itemReg2.png">
+
+					<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+					<a class="next" onclick="plusDivs(1)">&#10095;</a>
+                	<!-- <img src=""> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- 		<footer>
 			<p>© Yejin Park 2017. All Rights Reserved.</p>
         	<p class="text-right">Designed by <a target="_blank" href="#">Yejin Park</a></p>
@@ -302,6 +332,25 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
 }
 </script>
 </body>
