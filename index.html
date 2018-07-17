@@ -40,7 +40,7 @@
     
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
     <div id="wrap">
         <!-- <div id="myNav" class="overlay-nav">
 		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -75,25 +75,14 @@
 		    <nav id="navbar">
 		        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		            <ul class="nav navbar-nav navbar-right" id="myNav">
-		                <li data-menuanchor="top"><a href="#top" class="checks">Home</a></li>
-		                <li data-menuanchor="about"><a href="#about" class="checks active">About</a></li>
-		                <li data-menuanchor="work"><a href="#work" class="checks">Work</a></li>
-		                <li data-menuanchor="contact"><a href="#contact" class="checks">Contact</a></li>
+		                <li><a href="#top">Home</a></li>
+		                <li><a href="#about">About</a></li>
+		                <li><a href="#work">Work</a></li>
+		                <li><a href="#contact">Contact</a></li>
 		            </ul>
 		        </div>
 		    </nav>
-		    <script type="text/javascript">
-		    var header = document.getElementById("myNav");
-			var btns = header.getElementsByClassName("checks");
-			for (var i = 0; i < btns.length; i++) {
-			  btns[i].addEventListener("click", function() {
-			    var current = document.getElementsByClassName("active");
-			    current[0].className = current[0].className.replace(" active", "");
-			    this.className += " active";
-			  });
-			}
-    		</script>
-		    <section id="about" class="section">
+		    <div id="about" class="section">
 			    <div class="container-fluid cell">
 			    	<div class="container">
 			    		<h1 class="text-center">about</h1>
@@ -107,7 +96,7 @@
 					            <div class="col-sm-7 col-sm-offset-2">
 					            	<h3 class="hidden">rightbox</h3>
 					                <!-- <p class="title">Hello, I'm Cathy.</p> -->
-					                <p>I'm currently a senior at University of Michigan pursuing BSI at School of Information with a special focus on UI/UX Design and a minor in Applied Statistics. As a hobby, I enjoy taking photos and filming videos. The works that I have below are few photos and videos that describe myself the places that I visited. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people.</p>
+					                <p class="text-justify">I'm currently a senior at University of Michigan pursuing BSI at School of Information with a special focus on UI/UX Design and a minor in Applied Statistics. As a hobby, I enjoy taking photos and filming videos. The works that I have below are few photos and videos that describe myself the places that I visited. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people.</p>
 					                <p><a class="btn btn-default" href="img/resume.pdf" target="_blank">resume</a></p>
 					            </div>
 							</div>
@@ -115,52 +104,50 @@
 			    	</div>
 			        
 				</div>
-			</section>
+			</div>
 
-			<section id="work" class="section">
+			<div id="work" class="section">
 				<div class="container-fluid cell">
 					<h1 class="text-center">work</h1>
-					<div class="row portfolio">
+					<div class="row portfolio vertical-align">
 						<div class="col-sm-6 col-xs-12">
 							<div class="hovereffect">
 								<img class="centerBlock img-responsive" src="img/gettimeblocks.png" />
 								<div class="overlayWork">
 					                <h2>gettimeblocks</h2>
 									<p>
-										<a href="http://gettimeblocks.com" target="_blank">LINK HERE</a>
+										<a href="http://gettimeblocks.com" target="_blank">VIEW</a>
 									</p>
 					            </div>
 							</div>	
 						</div>
-						<div class="col-sm-6 col-xs-12">
+						<div class="col-sm-6 col-xs-12 description left-align">
+							<h2>gettimeblocks</h2>
+							<p><strong>Project: </strong>Landing Page Design</p>
+							<p class="text-justify">Redesigning the landing page for the official webpage of the company with various animation effects.</p>
+							<p><strong>Languages/Programs: </strong>HTML5, CSS, Javascript, JQuery</p>
+						</div>
+					</div>
+					<div class="row portfolio vertical-align">
+						<div class="col-sm-6 col-sm-push-6">
 							<div class="hovereffect">
 								<img class="centerBlock img-responsive" src="img/devgraph.png" />
 								<div class="overlayWork">
 					                <h2>day2life</h2>
 									<p>
-										<a href="#" data-toggle="modal" data-target="#modal1">LINK HERE</a>
-									</p>
-					            </div>
-							</div>	
-						</div>
-					</div>
-					<div class="row portfolio">
-						<div class="col-sm-6 col-sm-push-6">
-							<div class="hovereffect">
-								<img class="centerBlock img-responsive" src="img/day2life.png" />
-								<div class="overlayWork">
-					                <h2>Effect 12</h2>
-									<p>
-										<a href="#">LINK HERE</a>
+										<a href="#" data-toggle="modal" data-target="#modal1">VIEW</a>
 									</p>
 					            </div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-sm-pull-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<div class="col-sm-6 col-sm-pull-6 description right-align">
+							<h2>day2life</h2>
+							<p><strong>Project: </strong>Analytics for Developers</p>
+							<p>Creating statistics page for the developers to easily view the datasets pulled from SQL in table and graphs.</p>
+							<p><strong>Languages/Programs: </strong>Eclipse, MySQLWorkbench, Java, HTML, CSS, JQuery, SQL</p>
 						</div>
 					</div>
-					<div class="row portfolio">
+					<div class="row portfolio vertical-align">
 						<div class="col-sm-6 col-xs-12">
 							<div class="hovereffect">
 								<img class="centerBlock img-responsive" src="img/day2life.png" />
@@ -209,7 +196,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 			<footer id="contact" class="section">
 			    <div class="container-fluid cell">
 			    	<div class="container">
@@ -282,7 +269,19 @@
 
 					<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
 					<a class="next" onclick="plusDivs(1)">&#10095;</a>
-                	<!-- <img src=""> -->
+
+					<div class="dots">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span> 
+					  <span class="dot" onclick="currentSlide(7)"></span> 
+					  <span class="dot" onclick="currentSlide(8)"></span> 
+					  <span class="dot" onclick="currentSlide(9)"></span> 
+					  <span class="dot" onclick="currentSlide(10)"></span>
+					</div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -295,6 +294,18 @@
         	<p class="text-right">Designed by <a target="_blank" href="#">Yejin Park</a></p>
 		</footer> -->
 	</div>
+<script type="text/javascript">
+	// $('body').scrollspy({target: "#navbar"})
+	var header = document.getElementById("myNav");
+	var btns = header.getElementsByClassName("checks");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
+</script>
 <script>
 	var arrow = document.getElementById("arrow");
     $(document).ready(function(){
@@ -342,15 +353,24 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+function currentSlide(n) {
+  showDivs(slideIndex = n);
+}
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";  
 }
 </script>
 </body>

@@ -83,6 +83,13 @@
 	align-items: center; 
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 body{
 	font-family: 'Louis George Cafe', sans-serif;
 	color: white;
@@ -141,7 +148,7 @@ nav{
 	font-family: 'Louis George Cafe', sans-serif;
 	font-size: 20px;
 	z-index: 1;
-  	padding: 5px 40px 5px 0;   	
+  	padding-right: 40px;   	
   	background-color: #FAFAFA;
   	/*opacity: 0.7;*/
 }
@@ -163,7 +170,11 @@ nav a:hover{
     color:black;
 }*/
 
-.navbar-nav .active {
+#navbar{
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.navbar-nav .active>a {
     font-weight: 900;
     color: #23527c;
 }
@@ -301,13 +312,12 @@ header .row{
 	display: table;
 	background: #FAFAFA;
 	padding: 50px;
+	position: relative;
 }
 
 
 /*about section*/
 #about{
-	/*background: #C5C6C7;*/
-	/*background: #fff;*/
 	min-height: 720px;
 	height: 100%;
 }
@@ -336,7 +346,6 @@ header .row{
 	vertical-align: middle;
 }
 
-
 /*work section*/
 #work{
 	/*background: #E9E9E9;*/
@@ -351,17 +360,18 @@ header .row{
 	padding: 0 30px;
 }
 
-#work p{
-	/*margin: auto;*/
+#work .description h2{
+	color: #000;
+	text-transform: uppercase;
+	font-size: 30px;
 }
 
-.modal .btn{
-	border-radius: 0;
+.left-align{
+	margin-left: 15px;
 }
 
-.modal .close{
-	font-size: 40px;
-	margin-top: -10px;
+.right-align{
+	margin-right: 15px;
 }
 
 .hovereffect {
@@ -495,6 +505,34 @@ header .row{
 	text-decoration: none;
 	color: #000;
 	opacity: 1;
+}
+
+.modal .btn{
+	border-radius: 0;
+}
+
+.modal .close{
+	font-size: 40px;
+	margin-top: -10px;
+}
+
+.dots{
+	text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #717171;
 }
 
 
