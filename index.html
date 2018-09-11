@@ -19,12 +19,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
     <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <!-- <meta name="theme-color" content="#ffffff"> -->
     <!-- jquery and bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/jquery.fullPage.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -42,19 +39,6 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
     <div id="wrap">
-        <!-- <div id="myNav" class="overlay-nav">
-		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		    <div class="overlay-content">
-		        <a href="#top">Home</a>
-		        <a href="#about">About</a>
-		        <a href="#work">Work</a>
-		        <a href="#contact">Contact</a>
-		    </div>
-		</div> -->
-<!-- <nav id="navbar">
-			<h1 class="hidden">navigation</h1>
-			<span onclick="openNav()">&#9776;</span>
-		</nav> -->
 		<div id="content">
 		    <header id="top">
 		        <h1 class="hidden">header</h1>
@@ -94,9 +78,8 @@
 					            </div>
 					            <div class="col-sm-7 col-sm-offset-2">
 					            	<h3 class="hidden">rightbox</h3>
-					                <!-- <p class="title">Hello, I'm Cathy.</p> -->
 					                <p class="text-justify">I'm currently a senior at University of Michigan pursuing BSI at School of Information with a special focus on UI/UX Design and a minor in Applied Statistics. As a hobby, I enjoy taking photos and filming videos. The works that I have below are few photos and videos that describe myself the places that I visited. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people.</p>
-					                <p><strong>Languages: </strong>Python, HTML, CSS, JavaScript, R</p>
+					                <p><strong>Languages: </strong>Python, HTML, CSS, JavaScript, SQL, R</p>
 					                <p><a class="btn btn-default" href="img/resume.pdf" target="_blank">resume</a></p>
 					            </div>
 							</div>
@@ -116,16 +99,16 @@
 								<div class="overlayWork">
 					                <h2>gettimeblocks</h2>
 									<p>
-										<a href="landing/landing_en.html" target="_blank">VIEW</a>
+										<a href="#" data-toggle="modal" data-target="#modal1">VIEW</a>
 									</p>
 					            </div>
 							</div>	
 						</div>
 						<div class="col-sm-6 col-xs-12 description left-align">
-							<h2>gettimeblocks</h2>
+							<h2 class="workTitle">gettimeblocks</h2>
 							<p><strong>Project: </strong>Landing Page Design</p>
-							<p class="text-justify">Redesigning the landing page for the official webpage of the company with various animation effects.</p>
 							<p><strong>Languages/Programs: </strong>HTML5, CSS, Javascript, JQuery</p>
+							<p class="text-justify">Redesigning the landing page for the official webpage of the company with various animation effects.</p>
 						</div>
 					</div>
 					<div class="row portfolio vertical-align">
@@ -135,16 +118,16 @@
 								<div class="overlayWork">
 					                <h2>day2life</h2>
 									<p>
-										<a href="#" data-toggle="modal" data-target="#modal1">VIEW</a>
+										<a href="#" data-toggle="modal" data-target="#modal2">VIEW</a>
 									</p>
 					            </div>
 							</div>
 						</div>
 						<div class="col-sm-6 col-sm-pull-6 description right-align">
-							<h2>day2life</h2>
+							<h2 class="workTitle">day2life</h2>
 							<p><strong>Project: </strong>Analytics for Developers</p>
-							<p>Creating statistics page for the developers to easily view the datasets pulled from SQL in table and graphs.</p>
 							<p><strong>Languages/Programs: </strong>Eclipse, MySQLWorkbench, Java, HTML, CSS, JQuery, SQL</p>
+							<p>Creating statistics page for the developers to easily view the datasets pulled from SQL in table and graphs.</p>
 						</div>
 					</div>
 					<div class="row portfolio vertical-align">
@@ -202,32 +185,11 @@
 			    	<div class="container">
 				        <div class="row">
 				            <div class="col-sm-6 mx-auto">
-				                <!-- <div class="centerBlock"> -->
-				                    <!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons text-center">call</i></a> -->
-				                    <h5>phone</h5>
-				                    <a href="#" target="_blank"><h4>734-263-4605</h4></a>
-				                    <h5>email</h5>
-				                    <a href="#" target="_blank"><h4>cathyyejin@gmail.com</h4></a>
-				                    <!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons">mail_outline</i></a> -->
-				                    <!-- <a class="centerBlock" href="#" target="_blank"><i class="material-icons">pin_drop</i></a> -->
-				                    <!-- <h4 class="centerBlock">phone:</h4> -->
-				                    <!-- <h4>734-263-4605</h4> -->
-				                <!-- </div> -->
+			                    <h5>phone</h5>
+			                    <a href="#" target="_blank"><h4>734-263-4605</h4></a>
+			                    <h5>email</h5>
+			                    <a href="#" target="_blank"><h4>cathyyejin@gmail.com</h4></a>
 				            </div>
-				            <!-- 					<div class="col-sm-4 mx-auto">
-											<div class="centerBlock">
-												<a class="centerBlock" href="#" target="_blank"><i class="material-icons">mail_outline</i></a>
-												<h4 class="centerBlock">email:</h4>
-												<h4>cathyy96@gmail.com</h4>
-											</div>
-										</div>
-										<div class="col-sm-4 mx-auto">
-											<div class="centerBlock">
-												<a class="centerBlock" href="#" target="_blank"><i class="material-icons">pin_drop</i></a>
-												<h4 class="centerBlock">location:</h4>
-												<h4>Ann Arbor, Michigan</h4>
-											</div>
-										</div> -->
 							<div class="col-sm-6 social">
 			                    <a href="https://www.facebook.com/cathyy11" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
 			                    <a href="https://www.linkedin.com/in/yc-park" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
@@ -245,57 +207,81 @@
 			</footer>
 		</div>
 
-	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-left">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+	        <div class="modal-dialog modal-lg modal-left">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
 
-                    </button>
-                     <h5 class="modal-title" id="modal1Label">Day2Life</h5>
+	                    </button>
+	                     <h5 class="modal-title" id="modal1Label">GetTimeBlocks</h5>
 
-                </div>
-                <div class="modal-body">
-                	<img class="mySlides" src="img/devgraph.png" />
-					<img class="mySlides" src="img/item.png" />
-					<img class="mySlides" src="img/itemReview.png" />
-					<img class="mySlides" src="img/StatRec.png" />
-					<img class="mySlides" src="img/StatRec2.png" />
-					<img class="mySlides halfSize" src="img/itemDet.png" />
-					<img class="mySlides halfSize" src="img/itemDet1.png">
-					<img class="mySlides halfSize" src="img/itemDet2.png" />
-					<img class="mySlides halfSize" src="img/itemReg.png">
-					<img class="mySlides halfSize" src="img/itemReg2.png">
+	                </div>
+	                <div class="modal-body">
+	                	<div class="detail">
+	                		<p><strong>Project: </strong>Landing Page Design</p>
+	                		<p><strong>Languages/Programs: </strong>HTML5, CSS, Javascript, JQuery</p>
+							<p class="text-justify">Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects.</p>
+							
+	                		<p><a href="landing/landing_en.html" target="_blank">Link</a></p>
+	                	</div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 
-					<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
-					<a class="next" onclick="plusDivs(1)">&#10095;</a>
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+	        <div class="modal-dialog modal-lg modal-left">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+	                    </button>
+	                     <h5 class="modal-title" id="modal2Label">Day2Life</h5>
+	                </div>
+	                <div class="modal-body">
+	                	<div class="mySlides detail">
+	                		<p>Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects. Redesigning the landing page for the official webpage of the company with various animation effects.</p>
+	                		<p><a href="landing/landing_en.html" target="_blank">Link</a></p>
+	                	</div>
+	                	<img class="mySlides" src="img/devgraph.png" />
+						<img class="mySlides" src="img/item.png" />
+						<img class="mySlides" src="img/itemReview.png" />
+						<img class="mySlides" src="img/StatRec.png" />
+						<img class="mySlides" src="img/StatRec2.png" />
+						<img class="mySlides halfSize" src="img/itemDet.png" />
+						<img class="mySlides halfSize" src="img/itemDet1.png">
+						<img class="mySlides halfSize" src="img/itemDet2.png" />
+						<img class="mySlides halfSize" src="img/itemReg.png">
+						<img class="mySlides halfSize" src="img/itemReg2.png">
 
-					<div class="dots">
-					  <span class="dot" onclick="currentSlide(1)"></span> 
-					  <span class="dot" onclick="currentSlide(2)"></span> 
-					  <span class="dot" onclick="currentSlide(3)"></span> 
-					  <span class="dot" onclick="currentSlide(4)"></span> 
-					  <span class="dot" onclick="currentSlide(5)"></span> 
-					  <span class="dot" onclick="currentSlide(6)"></span> 
-					  <span class="dot" onclick="currentSlide(7)"></span> 
-					  <span class="dot" onclick="currentSlide(8)"></span> 
-					  <span class="dot" onclick="currentSlide(9)"></span> 
-					  <span class="dot" onclick="currentSlide(10)"></span>
-					</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- 		<footer>
-			<p>© Yejin Park 2017. All Rights Reserved.</p>
-        	<p class="text-right">Designed by <a target="_blank" href="#">Yejin Park</a></p>
-		</footer> -->
+						<a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+						<a class="next" onclick="plusDivs(1)">&#10095;</a>
+
+						<div class="dots">
+						  <span class="dot" onclick="currentSlide(1)"></span> 
+						  <span class="dot" onclick="currentSlide(2)"></span> 
+						  <span class="dot" onclick="currentSlide(3)"></span> 
+						  <span class="dot" onclick="currentSlide(4)"></span> 
+						  <span class="dot" onclick="currentSlide(5)"></span> 
+						  <span class="dot" onclick="currentSlide(6)"></span> 
+						  <span class="dot" onclick="currentSlide(7)"></span> 
+						  <span class="dot" onclick="currentSlide(8)"></span> 
+						  <span class="dot" onclick="currentSlide(9)"></span> 
+						  <span class="dot" onclick="currentSlide(10)"></span>
+						  <span class="dot" onclick="currentSlide(11)"></span>
+						</div>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	</div>
 <script type="text/javascript">
-	// $('body').scrollspy({target: "#navbar"})
 	var header = document.getElementById("myNav");
 	var btns = header.getElementsByClassName("checks");
 	for (var i = 0; i < btns.length; i++) {
