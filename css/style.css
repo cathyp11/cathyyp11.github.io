@@ -464,6 +464,10 @@ header .row{
   padding: 10px 20px;
 }
 
+.detail a{
+  text-decoration: none;
+}
+
 #modal2 img{
 	width: 100%;
 }
@@ -535,12 +539,13 @@ header .row{
 /*contact section*/
 #contact{
 	background: #88bbd6;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
 
 #contact a{
 	color: white;
+  text-decoration: none;
 }
 
 #contact a:hover{
