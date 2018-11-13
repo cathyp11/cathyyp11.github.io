@@ -388,14 +388,14 @@ ol li{
   }
 }
 
-/*footer nav*/
+/*bottom nav*/
 .index-navbar{
   margin-bottom: 50px;
 }
 .index-navbar a{
   margin-right: 25px;
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   font-family: 'Louis George Cafe', sans-serif;
 }
@@ -408,5 +408,17 @@ ol li{
   .index-navbar a{
     font-size: initial;
   }
+}
+
+/*footer*/
+footer{
+  margin-top: 20px;
+}
+footer p{
+  font-size: 14px;
+}
+.centerBlock{
+  display: table;
+  margin: auto;
 }
 
