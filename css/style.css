@@ -322,6 +322,10 @@ ol li{
   margin: 30px 0;
 }
 
+.workDetail .head{
+  font-weight: 900;
+}
+
 .workDetail .workImage{
   margin: 50px 0; 
 }
