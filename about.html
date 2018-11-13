@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cathy Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <!-- jquery and bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="https://use.fontawesome.com/2e5b8520d9.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nav-middle" href="index.html">Cathy Park</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="container">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/me.jpg">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <h4>Hi, I'm Cathy Park.</h4>
+                    <p>I'm currently a senior at University of Michigan pursuing BSI at School of Information with a special focus on UI/UX Design and a minor in Applied Statistics. I'm very passionate about social media and how it influences the people, thus I hope I can go further with my studies in incorporating media in order to impact people. I also enjoy watching movies and taking films. While I travel, I always try to create a video at the end of each trip to remember the moments.</p>
+                    <p>P.S. that dog is my friend's</p>
+                    <p><strong>Programs:</strong> Python, HTML5, CSS, JavaScript, MySQL, R, Git, Spring, Thyme Leaf, Adobe Creative Suites</p>
+                    <!-- <p><strong>Skills:</strong> Competitive/Comparative Analysis, Heuristic Evaluation, </p> -->
+                    <a class="btn btn-default" href="img/resume.pdf" target="_blank">resume</a>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div> 
+        <script>
+            $('nav .navbar-nav a').on('click', function() {
+                $('nav .navbar-nav').find('li.active').removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+        </script>   
+</body>
+
+</html>
