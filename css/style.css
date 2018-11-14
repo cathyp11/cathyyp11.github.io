@@ -322,6 +322,10 @@ ol li{
   margin: 30px 0;
 }
 
+.workDetail a:hover{
+  text-decoration: none;
+}
+
 .workDetail .head{
   font-weight: 900;
 }
@@ -381,6 +385,22 @@ ol li{
 .btn:hover{
   color: #adadad;
   background: transparent;
+}
+
+.skills{
+  margin-top: 50px;
+}
+
+.skills p{
+  font-size: 16px;
+  color: #505151;
+}
+
+.skills ul{
+  list-style-type: none;
+  font-family: 'Louis George Cafe', sans-serif;
+  padding: 0;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 450px) {
