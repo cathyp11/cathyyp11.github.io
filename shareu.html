@@ -50,7 +50,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Work</a></li>
+                    <li class="active"><a href="index.html">Work</a></li>
                     <li><a href="video.html">Video</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
@@ -58,64 +58,51 @@
         </div>
         <div class="workDetail">
             <div class="container">
-                <h1>Spoon University at University of Michigan Chapter</h1>
-                <p>10.2017 - Present</p>
-                <p>Spoon University is a global community of young influencers shaping the future of food. On our site, you can find the simplest recipes, the most obvious hacks you can’t believe you didn’t know, and the best restaurants around campus that you haven’t found yet. For many of us, this is the first time we’re navigating our campuses or our kitchens on our own, and Spoon University is here to simplify and celebrate that.</p>
-                <p>At University of Michigan, I joined Spoon University in junior year as a videographer. I created contents in form of visual stories on interesting topics such as the history of chocolate and spoon university events. After a year of videographer, I became a video director of our chapter and is continuing to lead a group of videographers.</p>
-                <p>
-                	Pages <br>
-                	<a href="https://spoonuniversity.com/chapter/michigan" target="_blank">Spoon University</a> <br>
-                	<a href="https://www.facebook.com/um.spoonuniversity/" target="_blank">Facebook</a> <br>
-                	<a href="https://www.instagram.com/spoon_michigan/" target="_blank">Instagram</a>
-
-                </p>
+                <h1>Analytics for Developers</h1>
+                <p>By using MySQL database as the backend, I connected to the server to add datasets and graph the datasets. I accessed databases based Item and used HTML/CSS in order to create pages for the Item adding forms, Item view tables, and Item detail pages. After creating web pages, I used MySQL queries to extract information on daily and weekly intervals. Along with those queries, I used JQuery to create generate charts and graphs for the clients to easily view the datasets on their demands. Since the company is only partnering with Korean clients, all the screenshots are in Korean.</p>
+                <p>Skills: Eclipse, MySQL Workbench, Java, HTML, CSS, JQuery, MySQL, MVC, Spring, ThymeLeaf</p>
             </div>
-            <div class="container spoonVideos">
-                <div class="row">
+            <div class="container-fluid">
+                <div class="row workImage">
                     <div class="col-sm-12 col-xs-12">
-                        <h4>GoNanas X Fred's X Spoon Pop Up Banana Bread Bar</h4>
-                        <a href="https://spoonuniversity.com/video-details/2710?utm_campaign=website&utm_source=sendgrid.com&utm_medium=email" target="_blank"><p>Link to the article</p></a>
-                        <div class="resp-container">
-                            <iframe class="resp-iframe" src="https://www.youtube.com/embed/QmHki850Z9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <img class="img-responsive" src="img/day2life/day2life1.png">
                     </div>
                 </div>
-            </div>
-            <div class="container spoonVideos">
-                <div class="row">
+                <div class="container">
+                    <p class="head">Item List and Item Review List</p>
+                    <p>Before jumping straight into backend, I started by understanding the architecture of Model-View-Controller. Since I had to use Spring Boot, Eclipse, Java, and ThymeLeaf, I spent a few days learning about the frameworks and the programs. After grasping the knowledge, I moved onto the clients page and the SQL database. I specifically worked on the item columns from the side navigation bar. I had to begin with creating an Item Controller in the server that connects all models and viewers. After the controller, I created models and viewers based off the SQL database. The first page that I worked on was an overall item listview with the columns pulled straight from the SQL database and a button that leads to the list of reviews for the item. After working on the item listview, I coded the item review list, which was a very similar process as item listview but separate viewer.</p>
+                </div>
+                <div class="row workImage">
                     <div class="col-sm-12 col-xs-12">
-                        <h4>7 Things Only Wolverine Foodies Will Understand</h4>
-                        <a href="https://spoonuniversity.com/video-details/1616" target="_blank"><p>Link to the article</p></a>
-                        <div class="resp-container">
-                            <iframe class="resp-iframe" src="https://www.youtube.com/embed/XVjiVQXBdx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <img class="img-responsive" src="img/day2life/itemDetail.png">
                     </div>
                 </div>
-            </div>
-            <div class="container spoonVideos">
-                <div class="row">
+                <div class="container">
+                    <p class="head">Item Detail and Item Create Pages</p>
+                    <p>After creating the list pages, I moved onto working on the detail pages, which are pages where users can edit and create items as clients. Item create page and item edit page have very similar structure, and thus the work was iterative. There were six types of input: text, number, blocked, drop-down, date, and file upload.</p>
+                </div>
+                <div class="row workImage">
                     <div class="col-sm-12 col-xs-12">
-                        <h4>ICYMI Money Actually Used To Grow On Trees</h4>
-                        <a href="https://spoonuniversity.com/video-details/1268" target="_blank"><p>Link to the article</p></a>
-                        <div class="resp-container">
-                            <iframe class="resp-iframe" src="https://www.youtube.com/embed/0_jf6z4Nhms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <img class="img-responsive" src="img/day2life/stats.png">
                     </div>
-                </div>                
-            </div>       
+                </div>
+                <div class="container">
+                    <p class="head">Statistics for Recommended Events</p>
+                    <p>Based on the list they’ve already had, I had to create an analytics page where clients can view the statistics and a graph of the statistics. Whether the client chooses to view in daily or weekly intervals, the graph changes the segments. I used Chart.js and MySQL functions to create graphs and connect the tables with the database. The user can deselect any category from the five categories and the graph will modify its default view depending on those selected categories.</p>
+                </div>
+            </div>
+            
         </div>
         <div class="container index-navbar">
-            <a href="spoon.html" class="active">Spoon University</a>
-            <a href="sandiego.html">Spring Break 2018: San Diego & Las Vegas</a>
-            <a href="seattle.html">Food Tour in Seattle</a>
-            <a href="switzerland.html">Spring Break 2017: Switzerland</a>
-        </div>
+            <a href="gettimeblocks.html">Landing Page Design</a>
+            <a href="day2life.html" class="active">Analytics for Developers</a>
+        </div> 
         <footer>
             <div class="centerBlock">
                 <p>© Cathy Park 2018. All Rights Reserved.</p>
             </div>
         </footer>
-    </div>
+    </div> 
     <script>
         $('nav .navbar-nav a').on('click', function() {
             $('nav .navbar-nav').find('li.active').removeClass('active');

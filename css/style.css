@@ -322,8 +322,18 @@ ol li{
   margin: 30px 0;
 }
 
+.workDetail a{
+  color: #707070;
+}
+
 .workDetail a:hover{
   text-decoration: none;
+  font-weight: 900;
+}
+
+.workDetail a:focus{
+  text-decoration: none;
+  color: #707070;
 }
 
 .workDetail .head{
@@ -333,6 +343,7 @@ ol li{
 .workDetail .workImage{
   margin: 50px 0; 
 }
+
 
 /*videos*/
 
@@ -361,6 +372,10 @@ ol li{
 /*about*/
 .about{
   margin: 100px;
+}
+
+.about .desc{
+  margin-top: 30px;
 }
 
 .about h4, .about p, .about a{
@@ -393,7 +408,7 @@ ol li{
 
 .skills p{
   font-size: 16px;
-  color: #505151;
+  color: #999999; 
 }
 
 .skills ul{
