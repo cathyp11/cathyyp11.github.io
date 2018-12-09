@@ -99,37 +99,25 @@ h2{
 
 h3{
 	font-weight: 600;
-	font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 	font-size: 38px;
 }
 
-/*h4{
-	font-family: 'Louis George Cafe', sans-serif;
-	font-size: 22px;
+h4{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
 }
 
 h5{
 	font-size: 20px;
 	color: #505151;
-}*/
+}
 
 p{
-	font-size: 18px;
-  /*font-family: 'Louis George Cafe', sans-serif;*/
-  /*font-family: 'Muli', sans-serif;*/
-  /*font-family: 'Krub', sans-serif;*/
+	font-size: 15px;
+  font-family: 'Poppins', sans-serif;
   }
-
-.workTitle {
-  font-family: 'Fester', sans-serif;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-ol li{
-  font-family: 'Louis George Cafe', sans-serif;
-}
 
 @media only screen and (max-width: 450px) {
   .vertical-align{
@@ -202,12 +190,6 @@ ol li{
   font-weight: 900;
   background-color: transparent !important;
 }
-
-/*.active, .btn:hover {
-    background-color: #666;
-    color: white;
-}
-*/
 
 .navbar-header span{
   background-color: #000;
@@ -317,13 +299,13 @@ ol li{
   text-align: center;
 }
 .workDetail p{
-  font-family: 'Louis George Cafe', sans-serif;
-  line-height: 30px;
-  margin: 30px 0;
+  line-height: 25px;
+  margin: 20px 0;
+  font-size: 15px;
 }
 
 .workDetail a{
-  color: #707070;
+  color: #505151;
 }
 
 .workDetail a:hover{
@@ -336,14 +318,54 @@ ol li{
   color: #707070;
 }
 
+.workDetail a:visited{
+  color: #9a9a9a;
+}
+
+.workDetail img{
+  margin: 0 auto;
+}
+
 .workDetail .head{
   font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  color: #43b9ea;
+  text-transform: uppercase;
+}
+
+.workDetail .skills p{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.workDetail .skills ul{
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .workDetail .workImage{
   margin: 50px 0; 
 }
 
+.workDetail .mockup{
+  /*background-image: url("../img/iphone_X.png");*/
+  /*background-repeat: no-repeat, repeat;*/
+/*  width: 375px;
+  height: 720px;*/
+  /*background-position: center center;*/
+  /*background-size: 260px;*/
+  position: relative;
+  margin: 0 auto;
+}
+
+.workDetail iframe{
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  z-index: -1;
+}
 
 /*videos*/
 
@@ -356,7 +378,6 @@ ol li{
     position: absolute;
     top: 0;
     left: 0;
-    /*margin: 0 auto;*/
     width: 100%;
     height: 100%;
     border: 0;
@@ -364,7 +385,6 @@ ol li{
 
 /*spoon videos*/
 .spoonVideos p{
-  font-family: 'Louis George Cafe', sans-serif;
   font-size: 18px;
   margin: 0 0 15px;
 }
@@ -413,7 +433,7 @@ ol li{
 
 .skills ul{
   list-style-type: none;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   font-size: 18px;
 }
@@ -436,7 +456,7 @@ ol li{
   color: #000;
   font-size: 18px;
   text-decoration: none;
-  font-family: 'Louis George Cafe', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .index-navbar .active, .index-navbar a:hover {

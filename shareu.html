@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cathy Park</title>
+    <title>Share U — Yejin Park</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
@@ -29,7 +29,7 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -58,44 +58,104 @@
         </div>
         <div class="workDetail">
             <div class="container">
-                <h1>Analytics for Developers</h1>
-                <p>By using MySQL database as the backend, I connected to the server to add datasets and graph the datasets. I accessed databases based Item and used HTML/CSS in order to create pages for the Item adding forms, Item view tables, and Item detail pages. After creating web pages, I used MySQL queries to extract information on daily and weekly intervals. Along with those queries, I used JQuery to create generate charts and graphs for the clients to easily view the datasets on their demands. Since the company is only partnering with Korean clients, all the screenshots are in Korean.</p>
-                <p>Skills: Eclipse, MySQL Workbench, Java, HTML, CSS, JQuery, MySQL, MVC, Spring, ThymeLeaf</p>
+                <h1>Share U</h1>
+                <div class="col-sm-12 col-xs-12">
+                    <p class="head">Design Statement</p>
+                    <p>One of the issues that exists within college communities is the difficulty of spreading information. Our team have experienced this first hand, especially being apart of such a large college community. For example, there is difficulty spreading information about new clubs on campus, club information sessions, events, fundraisers, resources, etc. As of now, Facebook is the main platform used to post about college events or information. Facebook has, for example, “Class of 2019” group, and each grade belongs to their class Facebook group. So, if someone wanted to post about a fundraiser or the couch they’re selling, they would post within their class group. This limits Facebook users to see only what is being posted within their grade and some students don’t have Facebook. The Facebook group isn’t designed in categories so if you check it, it’s just a jumble of information. </p>
+                    <p> There is an app that exists within communities called “Nextdoor” but doesn’t exist on college campuses. The app allows people to post about different things and then you can search within categories. It would be interesting to see a college version of the app on campuses and would be very useful. Ultimately, it is difficult to be involved on campus sometimes because of the lack of knowledge and I believe a platform to address this issue could be beneficial.</p>
+                </div>
+                <div class="col-sm-6 col-xs-12 skills">
+                    <p>Research</p>
+                    <ul>
+                        <li>Competitive Analysis</li>
+                        <li>Personas & Scenarios</li>
+                        <li>Design Space Analysis</li>
+                        <li>Paper Prototyping</li>
+                        <li>Hi-Fidelity Prototyping</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-xs-12 skills">
+                    <p>Tools</p>
+                        <ul>
+                            <li>Adobe XD</li>
+                            <li>Adobe Illustrator</li>
+                        </ul>
+                </div>
             </div>
             <div class="container-fluid">
-                <div class="row workImage">
+                <div class="row">
                     <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/day2life/day2life1.png">
+                        <img class="img-responsive" src="img/shareu/competitive.png" alt="competitive" />
                     </div>
                 </div>
                 <div class="container">
-                    <p class="head">Item List and Item Review List</p>
-                    <p>Before jumping straight into backend, I started by understanding the architecture of Model-View-Controller. Since I had to use Spring Boot, Eclipse, Java, and ThymeLeaf, I spent a few days learning about the frameworks and the programs. After grasping the knowledge, I moved onto the clients page and the SQL database. I specifically worked on the item columns from the side navigation bar. I had to begin with creating an Item Controller in the server that connects all models and viewers. After the controller, I created models and viewers based off the SQL database. The first page that I worked on was an overall item listview with the columns pulled straight from the SQL database and a button that leads to the list of reviews for the item. After working on the item listview, I coded the item review list, which was a very similar process as item listview but separate viewer.</p>
+                    <p class="head">Competitive Analysis</p>
+                    <p>
+                        The comparative analysis helped us understand how the other online “bulletin board” platforms are working in place. It gave us not only ideas on how to approach our solution but also what to not include in our solution. We also realized that some of the factors were not the easiest to compare since these platforms were intended for a different audience. With this in mind, our group landed on some fundamental ideas on the structure of our design that is intended to create an online space for better communication for college students. 
+                    </p>
                 </div>
-                <div class="row workImage">
+                <div class="row">
                     <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/day2life/itemDetail.png">
+                        <img class="img-responsive" src="img/shareu/personas.png" alt="personas"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/shareu/storyboard.png" alt="storyboard" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/shareu/qoc.png" alt="qoc" />
                     </div>
                 </div>
                 <div class="container">
-                    <p class="head">Item Detail and Item Create Pages</p>
-                    <p>After creating the list pages, I moved onto working on the detail pages, which are pages where users can edit and create items as clients. Item create page and item edit page have very similar structure, and thus the work was iterative. There were six types of input: text, number, blocked, drop-down, date, and file upload.</p>
+                    <p class="head">Design Space Analysis</p>
+                    <p>
+                        We wanted to leverage this opportunity to solidify our navigational structure and overall information architecture. The first question we asked was how the categorical items should be presented. Understanding this aspect of the application would set the basis for how users would navigate between each category. Our options included Lists, Grids (also referred to as Dashboard-style), and Tabs. While these are all common conventions, we decided that Lists would be the best option since it would take up little space while presenting items in an easily readable manner. On the other hand, although Tabs did have more positives aspects, we decided that higher interactivity - while it may potentially be a more engaging experience - may also require more effort from the users. Therefore, we chose to avoid it and proceed with the List option.
+                    </p>
                 </div>
-                <div class="row workImage">
+                <div class="row">
                     <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/day2life/stats.png">
+                        <img class="img-responsive" src="img/shareu/paper.png" alt="paper prototype" />
                     </div>
                 </div>
                 <div class="container">
-                    <p class="head">Statistics for Recommended Events</p>
-                    <p>Based on the list they’ve already had, I had to create an analytics page where clients can view the statistics and a graph of the statistics. Whether the client chooses to view in daily or weekly intervals, the graph changes the segments. I used Chart.js and MySQL functions to create graphs and connect the tables with the database. The user can deselect any category from the five categories and the graph will modify its default view depending on those selected categories.</p>
+                    <p class="head">Paper Prototyping</p>
+                    <p>
+                        After a lot of brainstorming, our team was able to come up with the beginning lo-fi prototype of our application. Even after our QOC, some things were changed. It wasn’t until we actually had to start putting design onto paper until some ideas started to pop into our head and things finally started to come together. We decided on the five tabs within our app that are home, categories, post, inbox, profile. Once we established these five solid, we had to decide exactly what each tab would look like.
+                    </p>
+                    <p class="head">Usability Testing</p>
+                    <p>
+                        During our usability testing, we discovered several defects in our prototype. Our participants had common suggestions as well as their personal comments to improve our prototype. All three usability tests went smoothly with the unique input from each participant. The third one went quicker than the first one because we got used to the process and adapted to the roles that we were assigned to. We got great feedback on the interaction of the application and also the content issues that confused them. 
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/shareu/digital.png" alt="digital prototype" />
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="head">Digital Prototyping</p>
+                    <p>
+                        To improve our design to more iOS like, we gave our design a makeover. Instead of using thin light gray lines, we got rid of the lines and added subtle drop shadows to block out each element. For example, the screenshots below show how we changed our Post page. From going to a drop down menu for picking the category, we came up with an app style screen with each category boxed into their own button. We also added smaller changes such as edit icons (pencil) and making the “Continue” button lighter until everything is selected before the user can move on. We also got feedback that we are using redundant icons. This confused the users because the “message” button was still there when the user accessed their chat through the inbox category. To eliminate this confusion, we changed the cancel button to an “x” and got rid of the message button. 
+                    </p>
+                    <p><a href="https://xd.adobe.com/spec/6bc922cb-d000-496b-67c9-1ea304795f89-1df8/">Link</a> to Full Prototype Design Spec on XD</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/shareu/poster.jpg" alt="poster" />
+                    </div>
+                </div>
+                <div class="mockup">
+                    <iframe style="transform: scale(0.6)" width="375" height="811" src="https://xd.adobe.com/embed/3f628632-080f-4141-53cb-f2700e074332-4953/" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            
         </div>
         <div class="container index-navbar">
             <a href="gettimeblocks.html">Landing Page Design</a>
-            <a href="day2life.html" class="active">Analytics for Developers</a>
+            <a href="day2life.html">Analytics for Developers</a>
+            <a href="shareu.html" class="active">Share U</a>
         </div> 
         <footer>
             <div class="centerBlock">
