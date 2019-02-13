@@ -495,11 +495,16 @@ p{
   margin-bottom: 50px;
 }
 .index-navbar a{
+  display: inline-block;
+  margin-bottom: 10px;
   margin-right: 25px;
   color: #000;
   font-size: 18px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+}
+.index-navbar a:hover{
+  color: #000;
 }
 
 .index-navbar .active, .index-navbar a:hover {
