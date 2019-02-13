@@ -360,6 +360,11 @@ p{
   width: 100%;
 }
 
+/*first paragraphs*/
+.workDetail>.container-fluid>.container{
+  margin-top: 0;
+}
+
 /*canvas carousel*/
 .glyphicon-chevron-left:before, .glyphicon-chevron-right:before{
   content: none;

@@ -94,11 +94,16 @@
                     <p>Another data source that I used was a CSV file from Kaggle called USVideo.csv . This dataset contained videos published from November 13th, 2017 to March 21st, 2018, but there were a few odd datasets such as video from April 21st, 2017. Since most datasets consumed from November to March, I limited Youtube API to those timeframes. The variables that used from this dataset were title, published_time, category_id. This dataset contains 28350 records.</p>
                     <p>I had to use another dataset from Youtube API to find category names from category_id, so I cached another JSON file from Youtube API. This API, however, has a different documentation since it’s from video categories. This JSON file only contained 32 records because there are only 32 categories. The variables that I used are category_id and category names. I used this dataset as a reference to find category names and join them later using category_id.</p>
                 </div>
-                <div class="row workImage">
+                 <div class="row workImage">
                     <div class="col-sm-12 col-xs-12">
                         <img class="img-responsive" src="img/youtube/lists.png" />
                     </div>
                 </div>
+                <div class="row workImage">
+                    <div class="col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/youtube/tables.png" />
+                    </div>
+                </div>                
                 <div class="container">
                     <p class="head">Data Manipulation Methods</p>
                     <p>For the first dataset, I needed to collect data using the Youtube API. Thus, I cached the dataset so I can have consistency in the results. Then, I unnested the dataset using dictionary keys starting from ‘data’ to ‘items’ to ‘snippet.’ As I unnested this dataset, I constantly used pd.read_json() to convert JSON file to pandas DataFrame and named it ‘data_yt’. For the second dataset, I uploaded USVideo.csv file on AWS S3 bucket and converted it to DataFrame using pd.DataFrame() and named it ‘df_Video’. Since this dataset was so large, I dropped unnecessary columns such as channel_title, thumbnail_link, description, etc.</p>
@@ -109,7 +114,7 @@
                 </div>
                 <div class="row workImage">
                     <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/youtube/tables.png" />
+                        <img class="img-responsive" src="img/youtube/graphs.png" />
                     </div>
                 </div>
                 <div class="container">
@@ -120,11 +125,6 @@
                     <p>Another analysis I’ve done is creating bar graphs based on columns ‘categories’, ‘days of week’, and ‘weekdays/weekends’. As the bigrams showed, category Entertainment is the most used category followed by category Music. Surprisingly, the category Show isn’t used much even though I thought there were many tv shows that I’ve seen on youtube. The bar graph of days had surprising result. I thought more videos would be published over the weekend but most of them were posted on Wednesdays and Tuesdays. I think people publish videos in the middle of the weekdays since more people tend to stay home and use Youtube whereas they go out on weekends. In order to get more views, people target weekdays to publish videos than weekends.</p>
                     <p>By plotting bar graphs based on days of week and weekdays/weekends after grouping by categories, the trend seemed to be similar except for one. Most videos were published on Wednesdays but videos from category Music were mostly published on Fridays. I think music is published mainly on Friday, unlike other categories, because Friday is when people start their weekends. To start of their weekends, people play music to excite their emotions and search music to uplift their emotion on Fridays. Except for category Music, all categories were mainly published on weekdays, which was an insight I didn’t expect.</p>
                     <p>From the dataset of Youtube API, not all videos had the variable ‘category_id’ like the videos from USVideo.csv, so it was a little difficult to find those ids. I thought category was required in uploading videos on Youtube, but it doesn’t seem like they are, which made my trend finding study difficult. Other than that, I was able to find trends on Youtube Videos. More people posted on weekdays and popular categories were Music and Entertainment as the bar graphs and title bigrams showed. The bar graphs attached below are in order of bar graphs of value_counts() of days of week, video categories, and categories of subgroup days of week.</p>
-                </div>
-                <div class="row workImage">
-                    <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/youtube/graphs.png" />
-                    </div>
                 </div>
             </div>
             <div class="container index-navbar">
