@@ -251,6 +251,7 @@ p{
 /*contact*/
 .forms{
   width: 50%;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 450px) {
