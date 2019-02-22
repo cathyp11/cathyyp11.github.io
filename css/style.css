@@ -145,7 +145,7 @@ p{
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
+/*@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
   .vertical-align{
     display: block;
   }
@@ -170,7 +170,7 @@ p{
   p{
     font-size: 13px;
   }
-}
+}*/
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
   #wrap{
