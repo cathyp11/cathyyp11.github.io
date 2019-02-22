@@ -277,7 +277,7 @@ p{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .hovereffect:hover .overlayWork {
@@ -302,7 +302,6 @@ p{
 @media (max-width: 1199.98px) {
   .overlayWork{
     opacity: 1;
-    background-color: rgb(0,0,0,0.7);
   }
 }
 
