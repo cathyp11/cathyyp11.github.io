@@ -98,27 +98,14 @@
                     <p class="head">Wireframe</p>
                     <p>As I mentioned in the <i>Project Scoping</i> section, I've created four main sections to portray my portfolio. Since it is a static page, I thought it was necessary to have a clear header for each section to create a sense of division. By placing a header in the center-top of each section, the users can be aware of the transition into each section. In the low-fi wireframe, I put placeholders to create the structure of the page. Because it was important to showcase my projects, I thought work section had to go first in the page followed by other personal information of About and Contact. In the beginning of the page, I wanted to have a screen-sized image to create a sense of clean impression with less words. Since it was an online portfolio, in the About section, I added a button for resume for recruiters to easily find my resume. The Work section is in grid format to display multiple projects at once with a detail on modal once the users click on the image. The About section contains a picture of myself, resume, little description about myself, and skills. The footer is basically the contact section with my email, address, and social media links. In mid-fi wireframes, I replaced all the placeholders with actual content. In the process, I decided to take out skills from about section since they were listed on my resume. I also switched the order of About and Work section to introduce myself first before jumping into showing my work.</p>
                 </div>
-                <div class="row workImage">
-                    <div class="col-sm-12 col-xs-12">
-                        <img class="img-responsive" src="img/youtube/graphs.png" alt="youtube" />
-                    </div>
-                </div>
-                <div class="container">
-                    <p class="head">Analysis</p>
-                    <p>First analysis that I’ve done was creating bigrams out of titles. By using regex, I extracted the alphabets and normalized
-                        the titles. I split titles to words, removed the stopwords, and created bigrams using NLTK. Then I sorted bigrams on counts and printed out top 15 bigrams along with their counts.</p>
-                    <p>Through this top 15 bigrams list, I realized that most titles are regarding trailers and teasers whether the videos are about movies or music. The word ‘official’ is very commonly used in video titles. The two movies that seem to pop out during the timeframe are <i>Star Wars: The Last Jedi</i> and <i>Black Panther</i> . Because of the Super Bowl in February, the bigram of super and bowl are on the top list as well. Also, one of the interesting trend I found out other than movies and music is a trend of makeup. The trend of makeup seems to be growing and the number of youtubers regarding beauty is becoming larger.</p>
-                    <p>Another analysis I’ve done is creating bar graphs based on columns ‘categories’, ‘days of week’, and ‘weekdays/weekends’. As the bigrams showed, category Entertainment is the most used category followed by category Music. Surprisingly, the category Show isn’t used much even though I thought there were many tv shows that I’ve seen on youtube. The bar graph of days had surprising result. I thought more videos would be published over the weekend but most of them were posted on Wednesdays and Tuesdays. I think people publish videos in the middle of the weekdays since more people tend to stay home and use Youtube whereas they go out on weekends. In order to get more views, people target weekdays to publish videos than weekends.</p>
-                    <p>By plotting bar graphs based on days of week and weekdays/weekends after grouping by categories, the trend seemed to be similar except for one. Most videos were published on Wednesdays but videos from category Music were mostly published on Fridays. I think music is published mainly on Friday, unlike other categories, because Friday is when people start their weekends. To start of their weekends, people play music to excite their emotions and search music to uplift their emotion on Fridays. Except for category Music, all categories were mainly published on weekdays, which was an insight I didn’t expect.</p>
-                    <p>From the dataset of Youtube API, not all videos had the variable ‘category_id’ like the videos from USVideo.csv, so it was a little difficult to find those ids. I thought category was required in uploading videos on Youtube, but it doesn’t seem like they are, which made my trend finding study difficult. Other than that, I was able to find trends on Youtube Videos. More people posted on weekdays and popular categories were Music and Entertainment as the bar graphs and title bigrams showed. The bar graphs attached below are in order of bar graphs of value_counts() of days of week, video categories, and categories of subgroup days of week.</p>
-                </div>
             </div>
             <div class="container index-navbar">
                 <a href="shareu">Share U</a>
                 <a href="gettimeblocks">Landing Page Design</a>
                 <a href="day2life">Analytics for Developers</a>
+                <a href="personal" class="active">Personal Portfolio</a>
                 <a href="canvas">Canvas Case Study</a>
-                <a href="youtube" class="active">Youtube Data Manipulation</a>
+                <a href="youtube">Youtube Data Manipulation</a>
             </div>
         </div>
         <footer>
