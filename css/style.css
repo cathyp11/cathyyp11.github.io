@@ -281,6 +281,7 @@ ol>li{
   position: relative;
   width: 100%;
   margin: 15px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .overlayWork {
@@ -300,10 +301,8 @@ ol>li{
   opacity: 1;
 }
 
-.hovereffect h3{
+.overlayText{
   color: #fff;
-  text-transform: uppercase;
-  font-size: 20px;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -314,6 +313,16 @@ ol>li{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.overlayText h3, .overlayText p{
+  color: #fff;
+}
+
+.overlayText h3{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 
 @media (max-width: 1199.98px) {
   .overlayWork{
