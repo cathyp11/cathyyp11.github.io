@@ -330,6 +330,13 @@ ol>li{
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .hovereffect h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+
 /*work detail pages*/
 .workDetail .container{
   max-width: 800px;
