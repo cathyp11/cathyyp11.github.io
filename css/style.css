@@ -530,7 +530,8 @@ ol>li{
   font-weight: 400;
   color: #fff;
   margin: 10px 0;
-  padding: 10px 15px;
+  padding: 7px 12px;
+  letter-spacing: 1px;
 }
 
 .btn:hover{
