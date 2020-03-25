@@ -524,17 +524,17 @@ ol>li{
 .about .btn{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  border: 1px #000 solid;
-  background: transparent;
+  background: #000;
   border-radius: 0;
   font-weight: 400;
-  color: #505151;
+  color: #fff;
   margin: 10px 0;
   padding: 3px 10px;
 }
 
 .btn:hover{
-  color: #adadad;
+  border: 2px #000 solid;
+  color: #000;
   background: transparent;
 }
 
