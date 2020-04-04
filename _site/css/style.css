@@ -330,6 +330,13 @@ ol>li{
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .hovereffect h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+
 /*work detail pages*/
 .workDetail .container{
   max-width: 800px;
@@ -419,6 +426,17 @@ ol>li{
   .workDetail .row>div{
     margin: 5px auto;
   }
+}
+
+/*visual abstract pages*/
+.workDetail .abstracts img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.workDetail .abstracts h2{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 30px auto 60px;
 }
 
 /*first paragraphs*/
@@ -517,17 +535,18 @@ ol>li{
 .about .btn{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  border: 1px #000 solid;
-  background: transparent;
+  border: 2px #000 solid;
+  background: #000;
   border-radius: 0;
   font-weight: 400;
-  color: #505151;
+  color: #fff;
   margin: 10px 0;
-  padding: 3px 10px;
+  padding: 7px 12px;
+  letter-spacing: 1px;
 }
 
 .btn:hover{
-  color: #adadad;
+  color: #000;
   background: transparent;
 }
 
