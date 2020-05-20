@@ -586,6 +586,11 @@ ol>li{
   font-size: 15px;
 }
 
+.skillsHeader {
+  background: linear-gradient(65deg , transparent 50%,rgba(3,78,136,0.7) 50%) left no-repeat, 
+
+}
+
 @media only screen and (max-width: 1200px) {
   .about{
     margin: 0;
