@@ -541,7 +541,7 @@ ol>li{
 
 /*about*/
 .about{
-  margin: 100px;
+  margin: auto 100px 100px 100px;
 }
 
 .about .desc{
