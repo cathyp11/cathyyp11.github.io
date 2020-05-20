@@ -428,6 +428,26 @@ ol>li{
   }
 }
 
+/*myvoice page*/
+
+.workDetail .btn{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  border: 2px #43b9ea solid;
+  background: #43b9ea;
+  border-radius: 0;
+  font-weight: 500;
+  color: #000;
+  margin: 10px 40px 10px 0;
+  padding: 7px 12px;
+  letter-spacing: 1px;
+}
+
+.workDetail .btn:hover{
+  color: #000;
+  background: transparent;
+}
+
 /*visual abstract pages*/
 .workDetail .abstracts img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
