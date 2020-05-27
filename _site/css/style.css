@@ -437,7 +437,7 @@ ol>li{
   background: #43b9ea;
   border-radius: 0;
   font-weight: 500;
-  color: #000;
+  color: #fff;
   margin: 10px 40px 10px 0;
   padding: 7px 12px;
   letter-spacing: 1px;
@@ -600,6 +600,12 @@ ol>li{
 @media only screen and (max-width: 450px) {
   .about h4{
     margin-top: 10px;
+  }
+  .skills p{
+    font-size: 14px;
+  }
+  .skills ul{
+    font-size: 13px;
   }
 }
 
