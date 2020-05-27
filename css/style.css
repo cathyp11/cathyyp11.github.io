@@ -152,9 +152,6 @@ ol>li{
   h5{
     font-size: 16px;
   }
-  p{
-    font-size: 13px;
-  }
 }
 
 /*@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
@@ -353,7 +350,7 @@ ol>li{
 }
 
 .workDetail a{
-  color: #43b9ea;
+  color: #3498DB;
 }
 
 .workDetail a:hover{
@@ -374,7 +371,7 @@ ol>li{
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
-  color: #43b9ea;
+  color: #3498DB;
   text-transform: uppercase;
 }
 
@@ -433,8 +430,8 @@ ol>li{
 .workDetail .btn{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  border: 2px #43b9ea solid;
-  background: #43b9ea;
+  border: 2px #3498DB solid;
+  background: #3498DB;
   border-radius: 0;
   font-weight: 500;
   color: #000;
@@ -581,7 +578,7 @@ ol>li{
 
 .skills p{
   font-size: 16px;
-  color: #999999; 
+  color: #3f79b5;
 }
 
 .skills ul{
