@@ -350,7 +350,7 @@ ol>li{
 }
 
 .workDetail a{
-  color: #3498DB;
+  color: #016eb7;
 }
 
 .workDetail a:hover{
@@ -371,7 +371,7 @@ ol>li{
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
-  color: #3498DB;
+  color: #016eb7;
   text-transform: uppercase;
 }
 
@@ -430,8 +430,8 @@ ol>li{
 .workDetail .btn{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  border: 2px #3498DB solid;
-  background: #3498DB;
+  border: 2px #016eb7 solid;
+  background: #016eb7;
   border-radius: 0;
   font-weight: 500;
   color: #000;
@@ -578,7 +578,7 @@ ol>li{
 
 .skills p{
   font-size: 16px;
-  color: #3f79b5;
+  color: #016eb7;
 }
 
 .skills ul{
