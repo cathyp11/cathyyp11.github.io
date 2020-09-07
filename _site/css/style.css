@@ -152,9 +152,6 @@ ol>li{
   h5{
     font-size: 16px;
   }
-  p{
-    font-size: 13px;
-  }
 }
 
 /*@media only screen and (min-width: 320px) and (max-width: 760px) and (orientation: landscape) {
@@ -353,7 +350,7 @@ ol>li{
 }
 
 .workDetail a{
-  color: #43b9ea;
+  color: #016eb7;
 }
 
 .workDetail a:hover{
@@ -374,7 +371,7 @@ ol>li{
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
-  color: #43b9ea;
+  color: #016eb7;
   text-transform: uppercase;
 }
 
@@ -428,13 +425,13 @@ ol>li{
   }
 }
 
-/*work pages buttons*/
+/*myvoice page*/
 
 .workDetail .btn{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  border: 2px #43b9ea solid;
-  background: #43b9ea;
+  border: 2px #016eb7 solid;
+  background: #016eb7;
   border-radius: 0;
   font-weight: 500;
   color: #fff;
@@ -581,7 +578,7 @@ ol>li{
 
 .skills p{
   font-size: 16px;
-  color: #999999; 
+  color: #016eb7;
 }
 
 .skills ul{
@@ -600,12 +597,6 @@ ol>li{
 @media only screen and (max-width: 450px) {
   .about h4{
     margin-top: 10px;
-  }
-  .skills p{
-    font-size: 14px;
-  }
-  .skills ul{
-    font-size: 13px;
   }
 }
 
