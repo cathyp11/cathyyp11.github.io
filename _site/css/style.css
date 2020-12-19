@@ -413,6 +413,13 @@ ol>li{
   margin: 0 auto;
 }
 
+.workDetail .image-title{
+  text-align: center;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 600;
+}
+
 .workDetail iframe{
   display: block;
   vertical-align: middle;
@@ -510,6 +517,10 @@ ol>li{
 
   .carousel-control.right {
     margin-right: 15px;
+  }
+  .workDetail .abstracts h2{
+    font-size: 15px;
+    margin: 30px;
   }
 }
 
