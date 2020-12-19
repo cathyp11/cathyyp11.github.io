@@ -622,6 +622,10 @@ ol>li{
     color: #fff;
 }
 
+.back-to-top i:hover {
+    color: #000;
+}
+
 .circle-icon {
     background: #016eb7;
     width: 50px;
