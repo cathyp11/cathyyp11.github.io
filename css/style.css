@@ -194,7 +194,7 @@ ol>li{
   text-align: center;
 }
 
-#myNav a:hover{
+#myNav a:hover, #myNav .active{
   font-weight: 900;
   background-color: transparent !important;
 }
@@ -207,9 +207,6 @@ ol>li{
   z-index: 1;
 }
 
-.active a{
-  font-weight: 700;
-}
 .nav>li>a:focus {
   background-color: #fff;
 }
