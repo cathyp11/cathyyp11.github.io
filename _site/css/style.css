@@ -589,7 +589,10 @@ ol>li{
 /*bottom nav*/
 .index-navbar{
   margin-bottom: 50px;
+  text-align: justify;
+  margin-top: 20px;
 }
+
 .index-navbar a{
   display: inline-block;
   margin-bottom: 10px;
@@ -598,9 +601,6 @@ ol>li{
   font-size: 18px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-}
-.index-navbar a:hover{
-  color: #000;
 }
 
 .index-navbar .active, .index-navbar a:hover {
