@@ -1,18 +1,9 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: "Louis George Cafe";
-    src: local('☺'), url("Louis_George_Cafe.eot") format("eot"),url("Louis_George_Cafe.woff") format("woff"),url("Louis_George_Cafe.ttf") format("truetype"),url("Louis_George_Cafe.svg#LouisGeorgeCafe") format("svg");
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face {
-  font-family:"Louis George Cafe Light";
-  src:local('☺'), url("Louis_George_Cafe_Light.eot") format("eot"),url("Louis_George_Cafe_Light.woff") format("woff"),url("Louis_George_Cafe_Light.ttf") format("truetype"),url("Louis_George_Cafe_Light.svg#LouisGeorgeCafeLight") format("svg");
-  font-weight:normal;
-  font-style:normal;
-}
+@font-face { font-family: 'NanumBarunGothic';
+    src: url('/fonts/NanumBarunGothic.eot');
+    src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
+    url('/fonts/NanumBarunGothic.woff') format('woff');}
 
 @font-face {
   font-family: 'Material Icons';
@@ -91,6 +82,7 @@
 body, h1, h2, h3, h4, h5, h6{
 	font-family: 'Playfair Display', serif;
 	color: #000;
+  word-break: keep-all;
 }
 
 h1{
@@ -212,7 +204,7 @@ ol>li{
 
 /*header*/
 #header{
-  padding: 50px 0;
+  padding: 50px 0 20px;
 }
 #header h2{
   line-height: 30px;
@@ -228,7 +220,7 @@ ol>li{
 
 @media only screen and (max-width: 450px) {
   #header{
-    padding: 10px 0;
+    padding: 20px 10px;
   }
   #header h2{
     line-height: initial;
