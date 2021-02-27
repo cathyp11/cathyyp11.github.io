@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-@font-face { 
+/*@font-face { 
   font-family: 'NanumBarunGothic';
   src: url('/fonts/NanumBarunGothic.eot');
   src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
-  url('/fonts/NanumBarunGothic.woff') format('woff');}
+  url('/fonts/NanumBarunGothic.woff') format('woff');}*/
 
 @font-face {
   font-family: 'Material Icons';
