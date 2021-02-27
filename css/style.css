@@ -430,8 +430,8 @@ ol>li{
   font-size: 15px;
   border: 2px #016eb7 solid;
   background: #016eb7;
-  border-radius: 0;
-  font-weight: 500;
+  border-radius: 30px;
+  font-weight: 400;
   color: #fff;
   margin: 10px 40px 10px 0;
   padding: 7px 12px;
@@ -561,7 +561,7 @@ ol>li{
   font-size: 15px;
   border: 2px #000 solid;
   background: #000;
-  border-radius: 0;
+  border-radius: 30px;
   font-weight: 400;
   color: #fff;
   margin: 10px 10px 0 0;
