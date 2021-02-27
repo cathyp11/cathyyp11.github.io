@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-@font-face { font-family: 'NanumBarunGothic';
-    src: url('/fonts/NanumBarunGothic.eot');
-    src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
-    url('/fonts/NanumBarunGothic.woff') format('woff');}
+@font-face { 
+  font-family: 'NanumBarunGothic';
+  src: url('/fonts/NanumBarunGothic.eot');
+  src: url('/fonts/NanumBarunGothic.eot') format('embedded-opentype'),
+  url('/fonts/NanumBarunGothic.woff') format('woff');}
 
 @font-face {
   font-family: 'Material Icons';
@@ -218,6 +219,10 @@ ol>li{
   text-decoration: none;
 }
 
+.social a:hover{
+  color: #016eb7;
+}
+
 @media only screen and (max-width: 450px) {
   #header{
     padding: 20px 10px;
@@ -346,12 +351,7 @@ ol>li{
 
 .workDetail a:hover{
   text-decoration: none;
-  color: #226f8e;
-}
-
-.workDetail a:focus{
-  text-decoration: none;
-  color: #707070;
+  color: #757575;
 }
 
 .workDetail img{
@@ -443,10 +443,10 @@ ol>li{
   background: transparent;
 }
 
-.workDetail .btn:visited{
+/*.workDetail .btn:visited{
   border: 2px #757575 solid;
   background: #757575;
-}
+}*/
 
 /*visual abstract pages*/
 .workDetail .abstracts img{
